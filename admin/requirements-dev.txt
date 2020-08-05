@@ -169,6 +169,9 @@ wrapt==1.10.11 \
     # via astroid
 
 # The following packages are considered to be unsafe in a requirements file:
+pip==19.1 \
+    --hash=sha256:8f59b6cf84584d7962d79fd1be7a8ec0eb198aa52ea864896551736b3614eee9 \
+    --hash=sha256:d9137cb543d8a4d73140a3282f6d777b2e786bb6abb8add3ac5b6539c82cd624
 setuptools==46.0.0 \
     --hash=sha256:2f00f25b780fbfd0787e46891dcccd805b08d007621f24629025f48afef444b5 \
     --hash=sha256:693e0504490ed8420522bf6bc3aa4b0da6a9f1c80c68acfb4e959275fd04cd82 \

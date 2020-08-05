@@ -4,6 +4,7 @@ flake8
 flaky
 mock
 pbr
+pip==19.1
 pip-tools>=4.0.0
 pylint
 pytest
