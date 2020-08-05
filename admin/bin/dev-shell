@@ -26,12 +26,18 @@ function docker_image() {
 }
 
 function docker_run() {
-    docker run \
-        --rm \
-           --user "${USER:-root}" \
-           --volume "${TOPLEVEL}:/sd-root" \
-           --workdir "/sd-root/admin" \
-           -ti ${DOCKER_RUN_ARGUMENTS:-} securedrop-admin "$@"
+    if [ -z "${CIRCLECI-}" ]
+    then
+        docker run \
+            --rm \
+            --user "${USER:-root}" \
+            --volume "${TOPLEVEL}:/sd-root" \
+            --workdir "/sd-root/admin" \
+            -ti ${DOCKER_RUN_ARGUMENTS:-} securedrop-admin "$@"
+    else
+        docker run --rm -ti ${DOCKER_RUN_ARGUMENTS:-} securedrop-admin "$@"
+    fi
+
 }
 
 docker_image
