@@ -120,7 +120,7 @@ ptyprocess==0.5.2 \
 py==1.5.2 \
     --hash=sha256:8cca5c229d225f8c1e3085be4fcf306090b00850fefad892f9d96c7b6e2f310f \
     --hash=sha256:ca18943e28235417756316bfada6cd96b23ce60dd532642690dcfdaba988a76d \
-    # via pytest, tox
+    # via pytest, pytest-catchlog, tox
 pycodestyle==2.3.1 \
     --hash=sha256:682256a5b318149ca0d2a9185d365d8864a768a28db66a84a2ea946bcc426766 \
     --hash=sha256:6c4245ade1edfad79c3446fadfc96b0de2759662dc29d07d80a6f27ad1ca6ba9 \
@@ -132,6 +132,9 @@ pyflakes==1.6.0 \
 pylint==2.5.0 \
     --hash=sha256:588e114e3f9a1630428c35b7dd1c82c1c93e1b0e78ee312ae4724c5e1a1e0245 \
     --hash=sha256:bd556ba95a4cf55a1fc0004c00cf4560b1e70598a54a74c6904d933c8f3bd5a8
+pytest-catchlog==1.2.2 \
+    --hash=sha256:4be15dc5ac1750f83960897f591453040dff044b5966fe24a91c2f7d04ecfcf0 \
+    --hash=sha256:a692966da726b918197cabd20dc0ad4da5503fbdc99baaa192e62579c8a45773
 pytest==3.2.0 \
     --hash=sha256:0225cf10b9e173f84729d5f4648211458a222c6e53a77a85e104bc5f31c244ee \
     --hash=sha256:d994b4f28c6d449a467ad3d336544945a0dcf350e3b7b301219547ef5aa8125e
