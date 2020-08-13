@@ -310,6 +310,10 @@ update-user-guides:  ## Run the page layout tests to regenerate screenshots.
 	@$(DEVSHELL) $(SDBIN)/update-user-guides
 	@echo
 
+.PHONY: upload-screenshots
+upload-screenshots: ## Upload all English language screenshots to Weblate.
+	$(SDBIN)/upload-screenshots
+	@echo
 
 ###########
 #
